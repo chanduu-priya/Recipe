@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Firebase SDKs (Using version 11.0.0 for consistency with your original imports) -->
+    <script src="https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.0/firebase-auth.js"></script>
+
+    <!-- Bootstrap for styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Firebase Login & Signup</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="col-4 center">
+        <h2 class="text-center">Login or Signup</h2>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control shadow-sm" id="txtEmail" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control shadow-sm" id="txtPassword" name="password">
+        </div>
+
+        <button type="submit" class="btn btn-primary shadow" id="btnLogin">Login</button>
+        <button type="submit" class="btn btn-secondary shadow" id="btnSignup">Signup</button>
+    </div>
+
+    <!-- JavaScript to handle Firebase Authentication -->
+    <script src="register.js"></script>
+</body>
+</html>
