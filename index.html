@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe App</h1>
+        <button id="add-ingredients-btn">Select Ingredients</button>
+        <button id="create-recipe-btn" style="display:none;">Create Your Own Recipe</button>
+        
+        <div id="recipe-list"></div>
+        
+        <!-- Ingredients Modal -->
+        <div id="ingredients-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Select Ingredients</h2>
+                <select id="ingredients-select" multiple></select>
+                <button id="search-recipes-btn">Search Recipes</button>
+            </div>
+        </div>
+        
+        <!-- Create Recipe Modal -->
+        <div id="create-recipe-modal" class="modal">
+            <div class="modal-content">
+                <span class="close close-create-recipe">&times;</span>
+                <h2>Create Your Own Recipe</h2>
+                <input type="text" id="recipe-name" placeholder="Enter Recipe Name">
+                <input type="file" id="recipe-image" accept="image/*">
+                <button id="save-recipe-btn">Save Recipe</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
